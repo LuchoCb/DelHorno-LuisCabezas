@@ -1,0 +1,821 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilos del header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    box-shadow: 0px 1px 7px rgb(197, 196, 196);
+    
+    
+}
+
+.logo {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+nav a:nth-child(1) {
+    width: 100px;
+    padding-left: 5%;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+   
+}
+
+.menu li a {
+    
+    text-decoration: none;
+    padding: 15px;
+    color: #9C640C;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    
+
+}
+
+.menu li a:hover {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    
+}
+
+.shopCart {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5%;
+
+   
+}
+
+.shopCart li a {
+    
+    text-decoration: none;
+    padding: 10px;
+    color: #2E4053;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+
+}
+
+.insripcion {
+    text-decoration: underline;
+}
+
+.shopCart li a input  {
+    
+    padding: 10px;
+    background-color: #F39C12;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100px;
+    border-radius: 4px;
+    border-style:none ;
+
+}
+
+.carrito {
+    width: 70%;
+}
+
+/*Estilos main Index*/
+
+main {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.IntroImg{
+    background-image: url(https://images.pexels.com/photos/10307515/pexels-photo-10307515.jpeg?cs=srgb&dl=pexels-skyler-ewing-10307515.jpg&fm=jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction:row;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.IntroImg h1 {
+    font-size: xx-large;
+    padding-right: 20px ;
+    margin-bottom: 2vh;
+}
+
+.InfoImg {
+    margin-top: 5%;
+    padding-left: 40vh;
+}
+
+.InfoImg p span{
+    font-size:larger;
+    font-style: italic;
+}
+
+.Product>h1 {
+    font-size: 400%;
+    display: flex;
+    justify-content: center;
+    padding: 4% 0 4% 0;
+    color: #684814;
+}
+
+
+.Product>h1>span {
+    color:#F39C12;
+}
+
+.ProductDescription {
+    height: 930px;
+    display: grid;
+    grid-template-areas: 
+    "img1  img2  img2"
+    "img1  txt2  txt2"
+    "img1  img3  img4"
+    "img1  txt3  txt4";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 290px 130px 251px 257px;
+    justify-items: center;
+
+}
+
+.ProductDescription>div>div>p {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#stars {
+    height: 2vh;
+}
+
+.PrincipalImg {
+    grid-area: img1;
+    width: 550px;
+    height: 870px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-end;   
+}
+
+.PrincipalImg div{
+    width: 500px;
+    position: absolute;
+    color: whitesmoke;
+    margin-bottom: 20px;
+
+}
+
+.img1 {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.img2 {
+    grid-area: img2;
+    width: 99%;
+    border-radius: 10px;
+    height: 283px;
+}
+
+.img3 {
+    grid-area: img3;
+    width: 98%;
+    border-radius: 10px;
+    height: 259px;
+    margin-top: 3vh;
+
+}
+
+.img4 {
+    grid-area: img4;
+    width: 98%;
+    border-radius: 10px;
+    height: 259px;
+    margin-top: 3vh;
+}
+
+
+.txt2 {
+    grid-area: txt2;
+    display: flex;
+    align-items: start;
+    margin-top: 12px;
+    justify-content: space-between;
+    width: 94%;
+}
+
+.txt2left h2 {
+    padding-bottom: 1vh;
+}
+
+.txt2center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txt2center>h3 {
+    padding-bottom: 1vh;
+    font-weight: normal;
+}
+
+.txt3 {
+    grid-area: txt3;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    margin-top: 70px;
+    width: 94%;
+}
+
+
+.txt3 h3 {
+    font-size: medium;
+    font-weight: normal;
+}
+
+.txt4 {
+    grid-area: txt4;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    margin-top: 70px;
+    width: 94%;
+}
+
+
+.txt4 h3 {
+    font-size: medium;
+    font-weight: normal;
+    }
+
+.VerMas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center; 
+    align-content: center;
+    text-decoration: none;
+}
+
+a input {
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 98%;
+
+}
+
+.AppDownload {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    align-content: center;
+    padding: 60px 60px;
+
+}
+
+.AppDownload h2 {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#appstore {
+    height: 4vh;
+    margin-top: 20px;
+}
+
+#playstore {
+    height: 4vh;
+}
+
+
+/*Estilos main contacto*/
+
+.MainContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#ContactTitle {
+    color: #2E4053;
+    font-size: 140%;
+    margin-bottom: 4vh;
+    margin-top: 8vh;
+}
+
+.MainContact img {
+    width: 6%;
+}
+
+.MainContact form label input {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    text-align: center;
+    font-size: medium;
+
+}
+
+.MainContact p {
+    margin: 2vh;
+    font-size:large;
+    text-align: center;
+}
+
+.MainContact form input {
+    margin:1%;
+}
+
+
+#AyudaTitle {
+    font-size: larger;
+    font-weight: 900;
+    margin: 5vh 0vh 2vh 3vh;
+}
+
+.MainContact form textarea {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+.SendButton {
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 20%;
+}
+
+.contactbuttons {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Estilos Panaderias*/
+
+
+#PanaderiasTitle span {
+    color: #9C640C;
+}
+
+.BakeryMap {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+#PanaderiasTitle {
+    margin-top: 8vh;
+    color:#684814;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 320px 320px);
+    gap: 24px;
+    place-content: center;
+}
+
+.productCont {
+    width: 100%;
+    height: 320px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.product-info div p:nth-child(4) {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 2px;
+  }
+
+  .product-info div p:nth-child(3) {
+    font-size: small;
+    color: grey;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .product-info figure img {
+    width: 100%;
+  }
+
+
+/*Estilos Inscripcion*/
+
+.InscripForm {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MainInscript {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    width: 100%;
+}
+.VideoInscripcion {
+    width: 70%;
+}
+
+.MainInscript div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.InscripForm label {
+    width: 100%;
+}
+
+.InscripForm label input {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: medium;
+    padding: 3% 0%;
+
+}
+
+.MainInscript h2 {
+    text-align: center;
+    width: 70%;
+}
+
+/*Estilos Nosotros*/
+
+.NosotrosImg {
+    background-image: url(https://images.pexels.com/photos/6291409/pexels-photo-6291409.jpeg?cs=srgb&dl=pexels-anna-shvets-6291409.jpg&fm=jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction:row;
+    margin-bottom: 20px;
+    margin-top: 10vh;
+    color: white;
+
+}
+
+#NosotrosTitle {
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    color: #2E4053;
+}
+
+.BodyProposito {
+    text-align: center;
+    padding: 0% 5% 0% 5%; 
+}
+.InfoNosotros {
+    margin-top: 5vh;
+    padding-left: 40vh;
+    color: #684814;
+    width: 40%;
+    text-align: right;
+}
+
+.InfoNosotros h2 {
+    padding-bottom: 10px;
+}
+
+/*Estilos app*/
+
+.appmain {
+    display: grid;
+    grid-template-areas: 
+    "cel1  cel2  cel3"
+    "text1  text2 text3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 480px 200px;
+    align-items: top;
+    justify-items: center;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.cel1 {
+    grid-area: "cel1";
+}
+
+.cel2 {
+    grid-area: "cel2";
+}
+
+.cel3 {
+    grid-area: "cel3";
+}
+
+.text1 {
+    grid-area: text1;
+}
+
+.text2 {
+    grid-area: text2;
+}
+
+.text3 {
+    grid-area: text3;
+}
+
+.text1 p {
+    padding: 3% 20% 0% 20%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text2 p {
+    padding: 3% 20% 0% 20%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text3 p {
+    padding: 3% 20% 0% 20%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos Carrito */
+
+.theOrder {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    display: flex;
+    margin-top: 8vh;
+
+}
+
+.myOrder {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+
+}
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vh;
+}
+.my-order-container {
+    align-items: center;
+    width: 50%;
+}
+
+.shopping-cart {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.shopping-cart figure {
+    margin: 0;
+}
+
+.shopping-cart figure img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.shopping-cart div p:nth-child(1) {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.shopping-cart div p:nth-child(2) {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.order {
+    display: flex;
+    justify-content: right;
+    justify-content: space-between;
+    padding-left: 41%;
+    padding-right: 7%;
+    margin-top: 8vh;
+    
+}
+
+.order section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:100px;
+}
+
+.order section p:nth-child(5) {
+    color:#F39C12;
+    font-weight: 600;
+    font-size: large;
+
+  }
+
+.datos {
+    grid-area: "datos";
+}
+
+.EnvioForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.EnvioForm h1 {
+    margin-bottom: 4vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.EnvioForm label {
+    width: 60%;
+}
+
+.EnvioForm label input {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: medium;
+    padding: 3% 0%;
+}
+
+.EnvioForm div {
+    width: 60%;
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.EnvioForm div section{
+    margin-bottom: 20px;
+}
+
+.EnvioForm div h2{
+    margin-bottom: 10px;
+}
+
+
+.PayButtons {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.PayButton {
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 30%;
+}
+
+/*Estilos Footer*/
+
+footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 16vh;
+    padding-top: 20px;
+    background-color: #F39C12;
+}
+
+.FooterInfo a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 40px;
+
+}
+
+.FooterInfo a:hover {
+    color: gray;
+}
+
+.logolegalfooter {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.FooterLogo {
+    width: 10%;
+}
+
+.FooterSocial {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.FooterSocial img{
+    width: 20%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.Legal {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: #F39C12;
+}
+
