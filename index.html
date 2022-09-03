@@ -11,14 +11,17 @@
 <body>
 
     <header>
-       
-        <nav>                       
+
             <a href="index.html"><img src="assets/images/LogoDH.png" alt="logo" class="logo"></a>
+            <label for="toggle">&#9776</label>
+                <input type="checkbox" id="toggle"/>
+
+        <nav>                       
                 <ul class="menu">
-                    <li><a href="pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="pages/panaderias.html">Panaderías</a></li>
-                    <li><a href="pages/app.html">App</a></li>
-                    <li class="contacto"><a href="pages/contacto.html">Contacto</a></li>
+                    <a href="pages/nosotros.html">Nosotros</a></li>
+                    <a href="pages/panaderias.html">Panaderías</a></li>
+                    <a href="pages/app.html">App</a></li>
+                    <a href="pages/contacto.html">Contacto</a>
                 </ul>
 
                 <ul class="shopCart">
@@ -40,9 +43,11 @@
         </section>
         </section>
 
-        <section class="Product">
+        <div class="Product">
 
             <h1> Delicias&nbsp;<span>Recién Salidas</span>&nbsp;en tu zona</h1>
+
+        </div>
             
             <section class="ProductDescription">
 
@@ -51,13 +56,26 @@
                         <div>
                             <h2>Churros</h2>
                             <img src="assets/images/Stars-white.png" alt="qualy" id="stars">
-                            <p>Salido Hace 00:00:00 del horno</p>
+                            <p>Salió Hace 00:00:00 del horno</p>
                             <p>$0.00 un</p>
                             <figure>
                                 <a href="DelHorno+LuisCabezas/Pages/carrito.html" ><img src="assets/images/agregar-white.png" alt="agregarpedido" id="Addbutton"></a>
                             </figure>
                         </div>
                     </section>
+
+                    <img src="https://images.pexels.com/photos/372851/pexels-photo-372851.jpeg" alt="Producto" class="img11">
+                    <div class="txt11">    
+                        <div>
+                            <h2>Churros</h2>
+                            <img src="assets/images/stars.png" alt="qualy" id="stars">
+                            <h3>Salió hace 00:00:00 del horno</h3>
+                            <p>$0.00 un</p>
+                        </div>
+                        <figure>
+                            <a href="pages/carrito.html" ><img src="assets/images/agregar.png" alt="agregarpedido" id="Addbutton"></a>
+                        </figure>
+                    </div> 
 
                     <img src="assets/images/baguette-home2.png" alt="Producto" class="img2" >
                     
@@ -67,18 +85,31 @@
                             <img src="assets/images/stars.png" alt="qualy" id="stars">
                         </div>
                         <div class="txt2center">
-                            <h3>Salido hace 00:00:00 del horno</h3>
+                            <h3>Salió hace 00:00:00 del horno</h3>
                             <p>$0.00 un</p>
                         </div>
                         <a href="pages/carrito.html" ><img src="assets/images/agregar.png" alt="agregarpedido" id="Addbutton"></a>
                     </div>
+
+                    <img src="https://images.pexels.com/photos/461060/pexels-photo-461060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Producto" class="img22">
+                    <div class="txt22">    
+                        <div>
+                            <h2>Baguette</h2>
+                            <img src="assets/images/stars.png" alt="qualy" id="stars">
+                            <h3>Salió hace 00:00:00 del horno</h3>
+                            <p>$0.00 un</p>
+                        </div>
+                        <figure>
+                            <a href="pages/carrito.html" ><img src="assets/images/agregar.png" alt="agregarpedido" id="Addbutton"></a>
+                        </figure>
+                    </div> 
 
                     <img src="assets/images/brownie-home.png" alt="Producto" class="img3">
                     <div class="txt3">    
                         <div>
                             <h2>Brownie</h2>
                             <img src="assets/images/stars.png" alt="qualy" id="stars">
-                            <h3>Salido hace 00:00:00 del horno</h3>
+                            <h3>Salió hace 00:00:00 del horno</h3>
                             <p>$0.00 un</p>
                         </div>
                         <figure>
@@ -91,7 +122,7 @@
                         <div>
                             <h2>Torta</h2>
                             <img src="assets/images/stars.png" alt="qualy" id="stars">
-                            <h3>Salido hace 00:00:00 del horno</h3>
+                            <h3>Salió hace 00:00:00 del horno</h3>
                             <p>$0.00 un</p>
                         </div>
                         <figure>
@@ -102,8 +133,6 @@
             </section>
 
             <a href="pages/panaderias.html" class="VerMas"><input type="button" value="Ver más"></a>
-
-        </section>
 
         <section class="AppDownload">
             <p>Descarga nuestra app y entérate cuándo salen los mejores productos <span>directo Del Horno</span></p>
