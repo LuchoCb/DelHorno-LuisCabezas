@@ -1087,10 +1087,7 @@ footer {
     }
     
     .img4 {
-        grid-area: img4;
-        width: 90%;
-        border-radius: 10px;
-        margin-top: 3vh;
+        display: none;
     }
     
     .txt3 {
@@ -1410,16 +1407,12 @@ footer {
     }
     
     .img3 {
-        grid-area: img1;
-        width: 100%;
-        margin-top: 3vh;
+       display: none;
     
     }
     
     .img4 {
-        grid-area: img1;
-        width: 100%;
-        margin-top: 3vh;
+        display: none;
     }
     
     .txt3 {
