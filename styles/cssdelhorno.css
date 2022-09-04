@@ -9,11 +9,10 @@ html, body {
     height: 100%;
     margin: 0;
     box-sizing: border-box;
-  }
-
-  html {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+
+
 /*Estilos del header*/
 
 nav {
@@ -49,7 +48,6 @@ nav {
     display: flex;
     flex-direction: row;
     text-align: center;
-    font-size: 100%;
 
 }
 
