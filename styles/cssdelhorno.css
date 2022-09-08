@@ -236,17 +236,21 @@ form div {
     align-items: center;
 }
 
-.MainInscript {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left: 30px;
-    width: 100%;
-}
 .VideoInscripcion {
     width: 70%;
+}
+
+#Inscriptitle {
+    margin-top: 8vh;
+    color:#684814;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#Inscriptitle span {
+    color: #9C640C;
 }
 
 .MainInscript div {
@@ -258,7 +262,10 @@ form div {
 }
 
 .InscripForm label {
-    width: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+
 }
 
 .InscripForm label input {
@@ -266,7 +273,11 @@ form div {
     border: none;
     border-radius: 5px;
     margin-bottom: 10px;
-    width: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
     text-align: center;
     font-size: medium;
     padding: 3% 0%;
@@ -648,7 +659,7 @@ footer {
         padding-left: 40vh;
     }
     
-    label {
+    .burguer {
         margin: 0 40px 0 0;
         font-size: 26px;
         line-height: 150px;
@@ -901,6 +912,16 @@ footer {
     #playstore {
         height: 4vh;
     }
+
+    .MainInscript {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        width: 100%;
+    }
     
     }
     
@@ -927,7 +948,7 @@ footer {
         padding: 20px ;
     }
       
-    label {
+    .burguer {
         display: flex;
         cursor: pointer;
         margin: 50px 0px 0px 400px;
@@ -1169,6 +1190,42 @@ footer {
     #playstore {
         height: 4vh;
     }
+
+    /*Estilos Inscripcion*/
+
+    .mainscrip {
+        width: 100%;
+    }
+
+    .MainInscript{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .VideoInscripcion {
+        width: 100%;
+    }
+
+    .MainInscript h2 {
+        text-align: center;
+        width: 70%;
+        font-size: medium;
+        margin-top: 30px;
+    }
+
+    #Inscriptitle {
+        margin-top: 8vh;
+        font-size:40px;
+        color:#684814;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #Inscriptitle span {
+        color: #9C640C;
+    }
+    
     
     /*Footer*/
     
@@ -1222,7 +1279,7 @@ footer {
         padding: 20px;
     }
         
-    label {
+    .burguer {
         display: flex;
         cursor: pointer;
         margin: 30px 0px 0px 300px;
@@ -1547,6 +1604,39 @@ footer {
     .text3 p {
         padding: 3% 20% 0% 20%;
         font-family: 'Poppins', sans-serif;
+    }
+
+
+    /*Estilos Inscripcion*/
+
+    .MainInscript{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .VideoInscripcion {
+        width: 100%;
+        margin-top: 6vh;
+    }
+
+    .MainInscript h2 {
+        text-align: center;
+        width: 70%;
+        font-size: medium;
+        margin-top: 3vh;
+    }
+
+    #Inscriptitle {
+        margin-top: 6vh;
+        font-size:30px;
+        color:#684814;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #Inscriptitle span {
+        color: #9C640C;
     }
 
         /*Footer*/
